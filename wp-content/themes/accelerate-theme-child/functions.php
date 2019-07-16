@@ -33,3 +33,8 @@ function create_custom_post_types() {
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_style( 'load-fa', '<script src="https://kit.fontawesome.com/21beb38244.js"></script>' );
+}

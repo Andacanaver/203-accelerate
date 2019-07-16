@@ -53,7 +53,7 @@ div.case-study-images {
 }
 ul.homepage-featured-work {
     list-style: none;
-    padding-left: 0;
+    margin: 0;
 }
 .homepage-featured-work li {
     display: inline-block;
@@ -109,3 +109,14 @@ div.case-study-images img {
 .case-studies-bottom a {
     text-transform: uppercase;
 }
+.social-media-navigation li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    display: inline-block;
+}
+.social-media-navigation {
+    list-style: none;
+}
+
