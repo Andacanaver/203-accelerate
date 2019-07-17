@@ -110,13 +110,15 @@ div.case-study-images img {
     text-transform: uppercase;
 }
 .social-media-navigation li {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #000;
     display: inline-block;
+    padding: 5px;
 }
 .social-media-navigation {
     list-style: none;
 }
-
+.social-media-navigation li a i {
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    padding: 6px;
+}
