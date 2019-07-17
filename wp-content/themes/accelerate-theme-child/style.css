@@ -109,9 +109,10 @@ div.case-study-images img {
 .case-studies-bottom a {
     text-transform: uppercase;
 }
-.social-media-navigation li {
+/*.social-media-navigation li {
     display: inline-block;
     padding: 5px;
+    
 }
 .social-media-navigation {
     list-style: none;
@@ -121,4 +122,78 @@ div.case-study-images img {
     background-color: #000;
     color: #fff;
     padding: 6px;
+}*/
+
+.social-media-navigation {
+    text-align: right;
+}
+.social-media-navigation li {
+    display: inline-block;
+}
+.social-media-navigation li a:before {
+    display: inline-block;
+    font-family: 'Fontawesome';
+    content: '\f0a9';
+    font-size: 1.25em;
+    padding: .3em;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: #3b3b3b;
+}
+.social-media-navigation li a[href*="facebook.com"]::before{ content: '\f39e';}
+.social-media-navigation li a[href*="twitter.com"]::before{ content: '\f099';}
+.social-media-navigation li a[href*="pintrest.com"]::before{ content: '\f0d2';}
+.social-media-navigation li a[href*="github.com"]::before{ content: '\f09b';}
+.social-media-navigation li a[href*="tumblr.com"]::before{ content: '\f173';}
+.social-media-navigation li a[href*="youtube.com"]::before{ content: '\f167';}
+.social-media-navigation li a[href*="flickr.com"]::before{ content: '\f16e';}
+.social-media-navigation li a[href*="vimeo.com"]::before{ content: '\f194';}
+.social-media-navigation li a[href*="intsagram.com"]::before{ content: '\f16d';}
+.social-media-navigation li a[href*="linkedin.com"]::before{ content: '\f0e1';}
+.social-media-navigation li a[href*="codepen.com"]::before{ content: '\f1cb';}
+
+/* Screen Reader Code */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
 }
