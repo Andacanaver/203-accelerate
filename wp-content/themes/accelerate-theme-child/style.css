@@ -211,12 +211,17 @@ div.case-study-images img {
     float: right;
     width: 33%;
 }
+.main-content {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
 
 @media (min-width: 768px) {
     .main-content {
         width: 60%;
         flex-grow: 0;
-        align-content: center;
+        text-align: center;
 
     }
     
