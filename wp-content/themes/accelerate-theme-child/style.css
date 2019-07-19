@@ -198,11 +198,27 @@ div.case-study-images img {
 	outline: 0;
 }
 
-.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
+/*.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
     background: #333;
     border: 0;
     color: #f7f7f7;
     transition: all .5s;
     display: flex;
     align-content: flex-end;
+}*/
+#nf-field-4 {
+    background: #35ac9d;
+    float: right;
+    width: 33%;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        width: 60%;
+        flex-grow: 0;
+        align-content: center;
+
+    }
+    
+
 }
