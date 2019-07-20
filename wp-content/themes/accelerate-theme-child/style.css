@@ -206,24 +206,78 @@ div.case-study-images img {
     display: flex;
     align-content: flex-end;
 }*/
-#nf-field-4 {
+.contact #nf-field-4 {
     background: #35ac9d;
     float: right;
     width: 33%;
 }
-.main-content {
-    width: 500px;
+
+.about .content-wrapper {
+    width: 66%;
+    text-align: center;
     margin: 0 auto;
-    display: block;
+}
+.about .about-title {
+    width: 50%;
+    margin: 0 auto;
+}
+.about .about-hero {
+    font-size: 1.512em;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.about .service-1,
+.about .service-2,
+.about .service-3,
+.about .service-4 {
+    display: flex;
+    flex-flow: row;
+    margin: 25px auto;
+    align-items: center;
+}
+.about .service-right-content {
+    width: 75%;
+    padding-left: 100px;
+    text-align: left;
+}
+.about .service-left-content {
+    width: 75%;
+    padding-right: 100px;
+    text-align: left;
+}
+.about .service-image {
+    width: 25%;
+    margin-top: 50px;
+}
+.about .about-bottom-content {
+    display: flex;
+    border-top: 1px solid #a6a6a6;
+    width: 66%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 25px;
+}
+.about .about-bottom-content p {
+    font-size: 1.512em;
+    font-weight: 700;
 }
 
 @media (min-width: 768px) {
-    .main-content {
-        width: 60%;
+    .contact .main-content {
+        
         flex-grow: 0;
         text-align: center;
-
+        width: 500px;
+        margin: 0 auto;
+        display: block;
     }
-    
+    .contact .main-content h2,
+    .contact .main-content p {
+        text-align: left;
+    }
 
 }
