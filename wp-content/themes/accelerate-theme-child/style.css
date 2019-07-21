@@ -206,7 +206,21 @@ div.case-study-images img {
     display: flex;
     align-content: flex-end;
 }*/
-.contact #nf-field-4 {
+
+@media (min-width: 768px) {
+    .contact .main-content {
+        
+        flex-grow: 0;
+        text-align: center;
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact .main-content h2,
+    .contact .main-content p {
+        text-align: left;
+    }
+    .contact #nf-field-4 {
     background: #35ac9d;
     float: right;
     width: 33%;
@@ -265,19 +279,30 @@ div.case-study-images img {
     font-size: 1.512em;
     font-weight: 700;
 }
-
-@media (min-width: 768px) {
-    .contact .main-content {
-        
+    .site-content .whoops {
+        width: 80%;
         flex-grow: 0;
-        text-align: center;
-        width: 500px;
         margin: 0 auto;
-        display: block;
+        display: flex;
+        align-items: center;
     }
-    .contact .main-content h2,
-    .contact .main-content p {
-        text-align: left;
+    .main-content .whoops-map {
+        width: 30%;
+        padding-top: 50px;
     }
-
+    .main-content .whoops-content {
+        width: 70%;
+    }
+    .main-content .whoops-content h1 {
+        color: #45ac9d;
+        font-size: 2.0125em;
+        
+    }
+    .main-content .whoops-content p {
+        font-size: 1.25em;
+    }
+    .main-content .whoops-content p a {
+        color: #45ac9d;
+        font-weight: 700;
+    }
 }
